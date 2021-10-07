@@ -361,7 +361,7 @@
    * --------------------------------------------------------------------------
    */
   const Default$2 = {
-    className: 'modal-backdrop',
+    className: 'chunter-aptify-web-boostrap-modal-backdrop',
     isVisible: true,
     // if false, we use the backdrop helper without adding any element to the dom
     isAnimated: false,

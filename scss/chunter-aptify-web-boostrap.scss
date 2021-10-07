@@ -108,8 +108,35 @@
     @import "utilities/api";
     // scss-docs-end import-stack
 
-    // Chunter-Customer
+
+    // Chunter-Scoped-Custom
     .clickable {
         cursor: pointer;
     }
+
+    select {
+        position: static;
+        margin: 0;
+    }
+}
+
+//Chunter-Global-Custom
+
+.chunter-aptify-web-boostrap-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.chunter-aptify-web-boostrap-modal-backdrop.show {
+    opacity: .5;
+}
+
+//Chunter-Global-Aptify-Overwrites
+.a-shell-slide-out {
+    z-index: 1030 !important;
 }

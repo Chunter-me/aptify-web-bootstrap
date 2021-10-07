@@ -9,7 +9,7 @@ import EventHandler from '../dom/event-handler'
 import { execute, executeAfterTransition, getElement, reflow, typeCheckConfig } from './index'
 
 const Default = {
-  className: 'modal-backdrop',
+  className: 'chunter-aptify-web-boostrap-modal-backdrop',
   isVisible: true, // if false, we use the backdrop helper without adding any element to the dom
   isAnimated: false,
   rootElement: 'body', // give the choice to place backdrop under different elements

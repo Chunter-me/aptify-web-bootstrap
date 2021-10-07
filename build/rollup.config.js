@@ -9,7 +9,7 @@ const banner = require('./banner.js')
 const BUNDLE = process.env.BUNDLE === 'true'
 const ESM = process.env.ESM === 'true'
 
-let fileDest = `bootstrap${ESM ? '.esm' : ''}`
+let fileDest = `chunter-aptify-web-boostrap${ESM ? '.esm' : ''}`
 const external = ['@popperjs/core']
 const plugins = [
   babel({
@@ -50,7 +50,7 @@ const rollupConfig = {
 }
 
 if (!ESM) {
-  rollupConfig.output.name = 'bootstrap'
+  rollupConfig.output.name = 'chunter-aptify-web-boostrap'
 }
 
 module.exports = rollupConfig

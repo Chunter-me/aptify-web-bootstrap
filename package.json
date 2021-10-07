@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "chunter-aptify-web-boostrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "5.1.1",
   "config": {
@@ -43,9 +43,9 @@
     "js-compile-plugins": "node build/build-plugins.js",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
     "js-minify": "npm-run-all --aggregate-output --parallel js-minify-*",
-    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.js.map,includeSources,url=bootstrap.min.js.map\" --output dist/js/bootstrap.min.js dist/js/bootstrap.js",
-    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.esm.js.map,includeSources,url=bootstrap.esm.min.js.map\" --output dist/js/bootstrap.esm.min.js dist/js/bootstrap.esm.js",
-    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.bundle.js.map,includeSources,url=bootstrap.bundle.min.js.map\" --output dist/js/bootstrap.bundle.min.js dist/js/bootstrap.bundle.js",
+    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/chunter-aptify-web-boostrap.js.map,includeSources,url=chunter-aptify-web-boostrap.min.js.map\" --output dist/js/chunter-aptify-web-boostrap.min.js dist/js/chunter-aptify-web-boostrap.js",
+    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/chunter-aptify-web-boostrap.esm.js.map,includeSources,url=chunter-aptify-web-boostrap.esm.min.js.map\" --output dist/js/chunter-aptify-web-boostrap.esm.min.js dist/js/chunter-aptify-web-boostrap.esm.js",
+    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/chunter-aptify-web-boostrap.bundle.js.map,includeSources,url=chunter-aptify-web-boostrap.bundle.min.js.map\" --output dist/js/chunter-aptify-web-boostrap.bundle.min.js dist/js/chunter-aptify-web-boostrap.bundle.js",
     "js-test": "npm-run-all --aggregate-output --parallel js-test-karma js-test-jquery js-test-integration-*",
     "js-debug": "cross-env DEBUG=true npm run js-test-karma",
     "js-test-karma": "karma start js/tests/karma.conf.js",
@@ -67,7 +67,7 @@
     "release": "npm-run-all dist release-sri docs-build release-zip*",
     "release-sri": "node build/generate-sri.js",
     "release-version": "node build/change-version.js",
-    "release-zip": "cross-env-shell \"rm -rf bootstrap-$npm_package_version-dist && cp -r dist/ bootstrap-$npm_package_version-dist && zip -r9 bootstrap-$npm_package_version-dist.zip bootstrap-$npm_package_version-dist && rm -rf bootstrap-$npm_package_version-dist\"",
+    "release-zip": "cross-env-shell \"rm -rf chunter-aptify-web-boostrap-$npm_package_version-dist && cp -r dist/ chunter-aptify-web-boostrap-$npm_package_version-dist && zip -r9 chunter-aptify-web-boostrap-$npm_package_version-dist.zip chunter-aptify-web-boostrap-$npm_package_version-dist && rm -rf chunter-aptify-web-boostrap-$npm_package_version-dist\"",
     "release-zip-examples": "node build/zip-examples.js",
     "dist": "npm-run-all --aggregate-output --parallel css js",
     "test": "npm-run-all lint dist js-test docs-build docs-lint",
@@ -79,10 +79,10 @@
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\"",
     "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\""
   },
-  "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
-  "main": "dist/js/bootstrap.js",
-  "module": "dist/js/bootstrap.esm.js",
+  "style": "dist/css/chunter-aptify-web-boostrap.css",
+  "sass": "scss/chunter-aptify-web-boostrap.scss",
+  "main": "dist/js/chunter-aptify-web-boostrap.js",
+  "module": "dist/js/chunter-aptify-web-boostrap.esm.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twbs/bootstrap.git"

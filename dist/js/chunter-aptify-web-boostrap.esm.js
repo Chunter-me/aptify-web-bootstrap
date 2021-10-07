@@ -2495,7 +2495,7 @@ class ScrollBarHelper {
  * --------------------------------------------------------------------------
  */
 const Default$7 = {
-  className: 'modal-backdrop',
+  className: 'chunter-aptify-web-boostrap-modal-backdrop',
   isVisible: true,
   // if false, we use the backdrop helper without adding any element to the dom
   isAnimated: false,
@@ -4996,4 +4996,4 @@ enableDismissTrigger(Toast);
 defineJQueryPlugin(Toast);
 
 export { Alert, Button, Carousel, Collapse, Dropdown, Modal, Offcanvas, Popover, ScrollSpy, Tab, Toast, Tooltip };
-//# sourceMappingURL=bootstrap.esm.js.map
+//# sourceMappingURL=chunter-aptify-web-boostrap.esm.js.map
