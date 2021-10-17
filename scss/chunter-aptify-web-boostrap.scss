@@ -118,6 +118,55 @@
         position: static;
         margin: 0;
     }
+
+    .btn.btn-primary-hover:hover {
+        @extend .btn-primary;
+    }
+
+    .btn.btn-secondary-hover:hover {
+        @extend .btn-secondary;
+    }
+
+    .btn.btn-info-hover:hover {
+        @extend .btn-info;
+    }
+
+    .btn.btn-success-hover:hover {
+        @extend .btn-success;
+    }
+
+    .btn.btn-warning-hover:hover {
+        @extend .btn-warning;
+    }
+
+    .btn.btn-danger-hover:hover {
+        @extend .btn-danger;
+    }
+
+    .btn.btn-light-hover:hover {
+        @extend .btn-light;
+    }
+
+    .btn.btn-dark-hover:hover {
+        @extend .btn-dark;
+    }
+
+    .btn.text-white-hover:hover {
+        @extend .text-white;
+    }
+
+    input[type="checkbox"] + label::before, .k-grid-header input[type="checkbox"] + label::before {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        content: "" !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .form-check-input {
+        margin-top: 1px;
+    }
 }
 
 //Chunter-Global-Custom
